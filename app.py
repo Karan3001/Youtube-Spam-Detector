@@ -14,7 +14,7 @@ def home():
 
 @app.route('/predict',methods=['POST'])
 def predict():
-	df= pd.read_csv('C://Users//Karan//Downloads//Youtube-Spam-Detector-ML-Flask-App//ytb.csv' , encoding='latin-1')
+	df= pd.read_csv('ytb.csv' , encoding='latin-1')
 	df_data = df[["CONTENT","CLASS"]]
 	# Features and Labels
 	df_x = df_data['CONTENT']
